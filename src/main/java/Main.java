@@ -1,35 +1,24 @@
-// 문제 : 아래가 실행되도록 해주세요.
+import java.util.stream.IntStream;
 
 class Main {
     public static void main(String[] args) {
+        // 일반
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
 
-        ㅇㅇ
+        // 스트림
+        IntStream.rangeClosed(1, 10)
+                .forEach(e -> {
+                    System.out.println(e);
+                });
 
+        // 스트림
+        IntStream.rangeClosed(1, 10)
+                .forEach(e -> System.out.println(e));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // 스트림
+        IntStream.rangeClosed(1, 10)
+                .forEach(System.out::println);
     }
-
 }
-
-
-
-
-
-
-
-
-
-
