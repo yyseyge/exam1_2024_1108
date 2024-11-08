@@ -1,24 +1,17 @@
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 class Main {
     public static void main(String[] args) {
-        // 일반
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
-        }
+        System.out.println("==프로그램 시작==");
 
-        // 스트림
-        IntStream.rangeClosed(1, 10)
-                .forEach(e -> {
-                    System.out.println(e);
-                });
-
-        // 스트림
-        IntStream.rangeClosed(1, 10)
-                .forEach(e -> System.out.println(e));
-
-        // 스트림
-        IntStream.rangeClosed(1, 10)
-                .forEach(System.out::println);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("명령어) ");
+        String command = sc.nextLine();
+        System.out.println(command);
+        System.out.printf("입력된 명령어 : %s\n", command);
+        sc.close();
+        System.out.println("==프로그램 끝==");
     }
 }
+
